@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Synapse Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-50">
+    <!-- navbar -->
+<nav class="bg-yellow-300 shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="logo.png" alt="Synapse Technology Logo" class="h-12 w-auto rounded-xl">
+                <span class="text-2xl font-bold text-gray-2000 font-serif ">Synapse Technology</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 font-bold hover:bg-yellow-600 hover:shadow-lg px-3 py-2 rounded-md">Home</a>
+                <a href="#about" class="text-gray-600 font-bold hover:bg-yellow-600 hover:shadow-lg px-3 py-2 rounded-md">About</a>
+                <a href="#service" class="text-gray-600 font-bold hover:bg-yellow-600 hover:shadow-lg px-3 py-2 rounded-md">Services</a>
+                <a href="#portfolio" class="text-gray-600 font-bold hover:bg-yellow-600 hover:shadow-lg px-3 py-2 rounded-md">Portfolio</a>
+                <a href="#contact" class="text-gray-600 font-bold hover:bg-yellow-600 hover:shadow-lg px-3 py-2 rounded-md">Contact</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- responsive -->
+    <div id="mobile-menu" class="md:hidden hidden px-2 pt-2 pb-3 space-y-2 bg-white shadow-md">
+        <a href="#home" class="block text-gray-600 hover:text-gray-900 hover:shadow-lg px-3 py-2 rounded-md">Home</a>
+        <a href="#about" class="block text-gray-600 hover:text-gray-900 hover:shadow-lg px-3 py-2 rounded-md">About</a>
+        <a href="#service" class="block text-gray-600 hover:text-gray-900 hover:shadow-lg px-3 py-2 rounded-md">Services</a>
+        <a href="#portfolio" class="block text-gray-600 hover:text-gray-900 hover:shadow-lg px-3 py-2 rounded-md">Portfolio</a>
+        <a href="#contact" class="block text-gray-600 hover:text-gray-900 hover:shadow-lg px-3 py-2 rounded-md">Contact</a>
+    </div>
+</nav>
+    <!-- bg -->
+    <div id="home" class="relative w-full h-screen overflow-hidden flex items-center justify-center">
+        <!-- Background Video -->
+        <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover">
+            <source src="bg2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <!-- Overlay for better text readability -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    
+        <!-- Content Wrapper -->
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto px-6 gap-10">
+            <!-- Left Section (Text) -->
+            <div class="text-left">
+                <h2 class="text-5xl md:text-6xl font-extrabold text-gray-200 drop-shadow-lg">
+                    Welcome to Our Digital World
+                </h2>
+                <p class="mt-4 text-lg text-gray-300">
+                    We create cutting-edge digital experiences that bring your brand to life. Join us on this journey.
+                </p>
+            </div>
+    
+            <!-- Right Section (Flipping Image) -->
+            <div class="relative w-64 md:w-80 h-80 group perspective">
+                <div class="relative w-full h-full transform-style-3d transition-transform duration-700 group-hover:rotate-y-180">
+                    <!-- Front Image -->
+                    <img src="h2-img-Photoroom.png" alt="Front Image" 
+                        class="absolute w-full h-full rounded-lg shadow-lg backface-hidden">
+                    
+    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <!-- About Section -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center">
+            <h2 class="text-4xl font-extrabold text-gray-800">About Us</h2>
+            <p class="mt-4 text-lg text-gray-600">At Synapse Technology, we believe in the power of connection.  We're not just building software; we're building bridges between businesses and their potential.  Founded in 2023 by a team of seasoned tech professionals with a shared vision, Synapse Technology is committed to delivering innovative and scalable solutions that empower our clients to thrive in the digital age.  We understand that technology is more than just code; it's a strategic tool that can drive growth, efficiency, and transformation. </p>
+        </div>
+        <div class="mt-10 flex flex-wrap justify-center gap-10">
+            <div class="max-w-md p-6 bg-white shadow-lg rounded-lg">
+                <h3 class="text-2xl font-semibold text-gray-700 p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:translate-y-[-10px] hover:shadow-2xl hover:z-10 text-center">Our Passion</h3>
+                <p class="mt-2 text-gray-600 text-center">Our passion lies in crafting bespoke solutions tailored to the unique needs of each client, fostering long-term partnerships built on trust, transparency, and a relentless pursuit of excellence.</p>
+            </div>
+            <div class="max-w-md p-6 bg-white shadow-lg rounded-lg">
+                <h3 class="text-2xl font-semibold text-gray-700 p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:translate-y-[-10px] hover:shadow-2xl hover:z-10 text-center">Our Vision</h3>
+                <p class="mt-2 text-gray-600 text-center">We aim to be a leading IT solutions provider, empowering businesses worldwide.</p>
+            </div>
+            <div class="max-w-md p-6 bg-white shadow-lg rounded-lg">
+                <h3 class="text-2xl font-semibold text-gray-700 p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:translate-y-[-10px] hover:shadow-2xl hover:z-10 text-center">Our Values</h3>
+                <p class="mt-2 text-gray-600 text-center">Integrity, innovation, and customer-centric solutions are at the core of our business.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+<!-- Services Section -->
+<section id="service" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center">
+        <h2 class="text-4xl font-extrabold text-gray-800 text-center">Our Services</h2>
+        <p class="mt-4 text-lg text-gray-600 text-center">We offer a range of IT solutions to help businesses thrive.</p>
+    </div>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl hover:z-10">
+            <h3 class="text-2xl font-semibold text-gray-700 text-center">Web Development</h3>
+            <p class="mt-2 text-gray-600 text-center">We build fast, responsive, and scalable websites tailored to your needs.</p>
+        </div>
+        <div class="p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl hover:z-10">
+            <h3 class="text-2xl font-semibold text-gray-700 text-center">Mobile App Development</h3>
+            <p class="mt-2 text-gray-600 text-center">Custom mobile solutions to enhance your business reach and engagement.</p>
+        </div>
+        <div class="p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl hover:z-10">
+            <h3 class="text-2xl font-semibold text-gray-700 text-center">Cloud Solutions</h3>
+            <p class="mt-2 text-gray-600 text-center">Secure and scalable cloud computing services to support your business growth.</p>
+        </div>
+        <div class="p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl hover:z-10">
+            <h3 class="text-2xl font-semibold text-gray-700 text-center">Cybersecurity</h3>
+            <p class="mt-2 text-gray-600 text-center">Protect your business with our top-notch security solutions.</p>
+        </div>
+        <div class="p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl hover:z-10">
+            <h3 class="text-2xl font-semibold text-gray-700 text-center">Digital Marketing</h3>
+            <p class="mt-2 text-gray-600 text-center">Boost your online presence with our strategic digital marketing services.</p>
+        </div>
+        <div class="p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl hover:z-10">
+            <h3 class="text-2xl font-semibold text-gray-700 text-center">IT Consulting</h3>
+            <p class="mt-2 text-gray-600 text-center">Expert advice to optimize your IT infrastructure and workflow.</p>
+        </div>
+    </div>
+</section>
+<hr>
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center">
+        <h2 class="text-4xl font-extrabold text-gray-800">Our Portfolio</h2>
+        <p class="mt-4 text-lg text-gray-600">Take a look at some of our recent projects.</p>
+    </div>
+    <div class="mt-10 flex items-center justify-between"> <!-- Added justify-between for spacing -->
+        <button id="prev" class="p-2 bg-gray-300 rounded-full mr-4">&#10094;</button>
+        <div class="slider w-full flex overflow-hidden gap-6"> <!-- Added gap-6 for space between cards -->
+            <div class="min-w-[300px] bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-110 hover:shadow-2xl"> <!-- Added hover effects -->
+                <img src="p1.webp" alt="Project 1" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">Customize Website</h3>
+                    <p class="mt-2 text-gray-600">A Website With Unique Design, Features And Functionality.</p>
+                </div>
+            </div>
+            <div class="min-w-[300px] bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-110 hover:shadow-2xl"> <!-- Added hover effects -->
+                <img src="p2.webp" alt="Project 2" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">Music Player</h3>
+                    <p class="mt-2 text-gray-600">The music player allows a user to play various media file formats.A responsive mobile app designed for seamless user experience.</p>
+                </div>
+            </div>
+            <div class="min-w-[300px] bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-110 hover:shadow-2xl"> <!-- Added hover effects -->
+                <img src="p3.webp" alt="Project 3" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">Food Delivery Website</h3>
+                    <p class="mt-2 text-gray-600">We'll develop a straightforward food delivery website that showcases food items, prices, and special offers</p>
+                </div>
+            </div>
+            <div class="min-w-[300px] bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-110 hover:shadow-2xl"> <!-- Added hover effects -->
+                <img src="p4.webp" alt="Project 4" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">Educational Website</h3>
+                    <p class="mt-2 text-gray-600">A website that provides information, resources, and services related to education and learning</p>
+                </div>
+            </div>
+            <div class="min-w-[300px] bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-110 hover:shadow-2xl"> <!-- Added hover effects -->
+                <img src="p5.webp" alt="Project 5" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">Ecommerce Website </h3>
+                    <p class="mt-2 text-gray-600">A blockchain-based secure transaction system.</p>
+                </div>
+            </div>
+        </div>
+        <button id="next" class="p-2 bg-gray-300 rounded-full ml-4">&#10095;</button>
+    </div>
+</section>
+<hr>
+
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Contact Details -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
+            <p class="mt-4 text-gray-600">Reach out to us for any inquiries or assistance.</p>
+            <div class="mt-6">
+                <p class="text-gray-700"><strong>Phone:</strong> +1 234 567 890</p>
+                <p class="text-gray-700"><strong>Email:</strong> info@company.com</p>
+                <p class="text-gray-700"><strong>Address:</strong> 123 IT Park, Tech City, USA</p>
+                
+            </div>
+        </div>
+        
+        <!-- Feedback Form -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-3xl font-bold text-gray-800">Feedback Form</h2>
+            <form id="feedback-form" class="mt-4">
+                <div class="mb-4">
+                    <label class="block text-gray-700">Name</label>
+                    <input type="text" class="w-full p-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Email</label>
+                    <input type="email" class="w-full p-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Message</label>
+                    <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600">Submit</button>
+            </form>
+            <p id="form-message" class="mt-4 text-green-600 hidden">Thank you for your feedback!</p>
+        </div>
+    </section>
+    <hr>
+
+     <!-- Chatbot Container -->
+     <div class="fixed bottom-6 right-6">
+        <!-- Chat Icon -->
+        <button id="chatbotToggle" class="bg-black text-yellow-500 p-3 rounded-full shadow-lg hover:bg-yellow-500 hover:text-black transition">
+            💬
+        </button>
+
+        <!-- Chatbot Box -->
+        <div id="chatbot" class="hidden bg-white w-80 p-4 rounded-lg shadow-lg mt-2 border border-gray-300">
+            <h2 class="text-lg font-bold text-gray-800">How can I help you?</h2>
+            <div id="chatbox" class="mt-3 space-y-2 bg-gray-100 p-2 rounded h-40 overflow-y-auto"></div>
+            <div id="chatQuestions" class="mt-3 space-y-2">
+                <!-- Questions will be inserted here -->
+            </div>
+            <button id="closeChatbot" class="mt-3 bg-black text-yellow-500 px-3 py-1 rounded hover:bg-yellow-500 hover:text-black">
+                Close
+            </button>
+        </div>
+    </div>
+
+
+    <!-- arrow -->
+    <button id="scrollToTop" class="fixed bottom-6 right-24 bg-black text-yellow-500 p-3 rounded-full shadow-lg hover:bg-yellow-500 hover:text-black transition-opacity opacity-0">
+        &#8679;
+    </button>
+    
+    
+    
+
+
+<!-- Footer -->
+<footer class="bg-yellow-300 text-black text-center py-4">
+    <h5>Created By Samruddhi Jagdale</h5>
+    <p>&copy; 2024 DressShop. All rights reserved.</p>
+  </footer>
+
+<!-- FontAwesome for Icons -->
+     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+       
+</body>
+</html>
+
